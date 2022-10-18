@@ -114,6 +114,8 @@ function yaamp_get_algos()
 		'yespowerSUGAR',
 		'yespowerURX',
 		'zr5',
+		'curvehash',
+
     );
 }
 
@@ -149,6 +151,7 @@ function yaamp_get_algo_norm($algo)
 
 	$a = array(
 		'argon2'	=> 1.0,
+		'curvehash'     => 1.0,
 		'argon2d250'	=> 1.0,
 		'argon2d-dyn'	=> 1.0,
 		'argon2d4096'	=> 1.0,
@@ -190,6 +193,7 @@ function getAlgoColors($algo)
 {
 	$a = array(
 		'sha256'	=> '#d0d0a0',
+		'curvehash'     => '#d0a0a0',
 		'sha256t'	=> '#d0d0f0',
 		'scrypt'	=> '#c0c0e0',
 		'neoscrypt'	=> '#a0d0f0',
@@ -312,6 +316,7 @@ function getAlgoPort($algo)
 {
 	$a = array(
 		'sha256'	=> 3333,
+		'curvehash'     => 3343,
 		'sha256t'	=> 3339,
 		'lbry'		=> 3334,
 		'scrypt'	=> 3433,
